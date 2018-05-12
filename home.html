@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>project 1</title>
+<style>
+
+#motherdiv{height:3000px;width:1250px;margin:0px auto;}
+
+#maindiv{height:2600px;width:1180px;float:left;background:#ADA1A1;margin-left:10px;}
+
+#leftdiv{height:900px; width:15px;float:left;}
+
+#rightdiv{height:900px; width:15px;float:right;}
+
+
+
+#ting{margin-top:5px;border:5px solid blue;height:400px;width:1500px;}
+
+#nav{border:5px;margin-top:5px;margin:0px auto;height:30px;width:1100;text-align:center;}
+#nav  ul{
+list-style-type:none;
+display:inline;postion:fixed;word-spacing:100px;
+}
+
+#nav  ul  li{
+display:inline;
+ padding:3px;}
+
+#nav  ul  li:hover{
+display:block;
+display:inline;
+
+}
+
+#nav ul  li a{
+
+font-size:25px;
+text-decoration:none;
+color:white;
+font-family:courier;
+space:6px;
+}
+
+#nav  ul li a:hover{
+background:Orchid; 
+border-radius:5px;
+
+}
+
+
+#nav  ul li a:visited{
+color:red;
+border-radius:5px;
+
+}
+
+
+#nav  ul li a:link{
+color:green;
+border-radius:5px;
+
+}
+
+
+#nav  ul li a:active{
+color:blue;
+border-radius:5px;
+
+}
+
+
+
+#mid{height:1800px;width1100px; }
+
+#tablediv{height:1770px;width:950px;float:left;margin-top 5px;background:#666666;}
+#tablediv table{border-spacing:5px;}
+#tablediv table{table border:5px ; }
+#tablediv table tr td{padding:10px;}
+#tablediv table tr td:hover {background:black;box-shadow: 5px 5px 5px #888888;}
+#tablediv table tr td p:hover {background:white;color:black;text-decoration:underline;text-align:center;text-shadow:1px 1px #666666;}
+#tablediv table tr td p{color:white;text-align:center;text-shadow:2px 3px black;}
+#tablediv table tr:nth-child(even){background:#808080;}
+
+#side{width:220px;height:1770px;float:right;background:#666666;}
+#side ul li{color:#9FBEDD;}
+#side  p{color:#9FBEDD; text-align:center;font-style: oblique;font-family:serif;}
+#side ul li{color:#9FBEDD; font-style: oblique;font-family:serif;list-style-type:square;list-style-position:inside;}
+#side  ul li:hover{color:black; text-align:right;font-style: oblique;font-family:serif;}
+#side  ul li a{text-decoration:none;color:black}
+#side ul li a:visited{
+color:dark red ;
+border-radius:5px;
+
+}
+
+
+#side ul li a:link{
+color:dark green ;
+border-radius:5px;
+
+}
+
+
+#side ul li a:active{
+color:dark blue ;
+border-radius:5px;
+
+}
+
+
+
+#footer{height:300px;width;1100px;margin-top:30px;background:#333333;}
+
+#left-footer{color:#9FBEDD;background:#666666 ;float:left;margin-left:20px;height:250;width:300px;text-align:center;text-align:justify; word-spacing:3px;font-style: oblique;font-family:serif;}
+#left-footer ul li a{text-decoration:none;color:#9FBEDD;}
+#left-footer ul li a:hover{color:white;background:black;text-shadow:1px 1px #666666;}
+
+#left-footer2  li:hover{color:black; text-align:center;font-style: oblique;font-family:serif;}
+
+#left-footer1{color:#9FBEDD;background:#666666 ;float:left;margin-left:20px;height:260;width:400px;text-align:left; word-spacing:3px;font-style: oblique;font-family:serif;}
+#left-footer1 ul li a{text-decoration:none;color:#9FBEDD;}
+
+#mid{animation:mymove 10s infinite}
+@keyframes mymove {
+from {background:#ffffff;}
+to {background:#000000;} 
+
+
+
+
+
+</style>
+
+
+<script type="text/javascript">
+var imagecount=1;
+var total=8;
+function slide(x)
+{
+var Image= document.getElementById("img");
+imagecount=imagecount+x;
+if(imagecount>total){imagecount=1;}
+if(imagecount<1){imagecount=total;}
+Image.src="image/img"+ imagecount +".JPG";
+}
+window.setInterval(
+function slideA()
+{
+var Image= document.getElementById("img");
+imagecount=imagecount+1;
+if(imagecount>total){imagecount=1;}
+if(imagecount<1){imagecount=total;}
+Image.src="image/img"+ imagecount +".JPG";
+},2000);
+</script>
+
+</head>
+<body bgcolor=" #1a1a1a" onload="Slider()">
+<div id="motherdiv">
+
+<div id="leftdiv">
+</div>
+
+<div id="maindiv">
+<div id="timg">
+<img src="image\img1.jpg "alt="Naruto picture" width="1180px"height="350px" id="img">
+
+</div>
+<div id="nav">
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="form.php">FORM</a></li>
+<li><a href="reserve.php">SEAT</a></li>
+<li><a href="sign-in.php">SIGN-IN</a></li>
+<li><a href="sign-in.php">BOOKING</a></li>
+</ul>
+</div>
+<div id="mid">
+<div id="tablediv">
+<table>
+<tr>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="JUSTICE LEAGUE - Official Heroes Trailer - YouTube.ogg" type="video/ogg">
+
+<source src="JUSTICE LEAGUE - Official Heroes Trailer - YouTube.MP4 " type="video/mp4">
+
+</video>
+<p> JUSTICE league</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Dragon Ball Super Episode 2.ogg" type="video/ogg">
+
+<source src="Dragon Ball Super Episode 2.mp4 " type="video/mp4">
+
+</video>
+<p>Dragon Ball Super  </p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Akame ga Kill! Episode 24.ogg" type="video/ogg">
+
+<source src="Akame ga Kill! Episode 24.mp4 " type="video/mp4">
+
+</video>
+<p>Akame ga Kill</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Watch Chu Feng- B.E.E Episode 1 english sub at Animes TV.ogg" type="video/ogg">
+
+<source src="Watch Chu Feng- B.E.E Episode 1 english sub at Animes TV.mp4 " type="video/mp4">
+
+</video>
+<p>Chu Feng- B.E.E</p>
+</td>
+</tr>
+<tr>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Watch Kuroko no Basket- Saikou no Present Desu Episode 1 english sub at Animes TV.ogg" type="video/ogg">
+
+<source src="Watch Kuroko no Basket- Saikou no Present Desu Episode 1 english sub at Animes TV.mp4 " type="video/mp4">
+
+</video>
+<p>Watch Kuroko no Basket</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Avatar The Legend Korra Full Episodes Season 3 Episode 6 - Old Wounds - YouTube.ogg" type="video/ogg">
+
+<source src="Avatar The Legend Korra Full Episodes Season 3 Episode 6 - Old Wounds - YouTube.mp4 " type="video/mp4">
+
+</video>
+<p>Avatar The Legend Korra</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Freezing Vibration.ogg" type="video/ogg">
+
+<source src="Freezing Vibration.mp4 " type="video/mp4">
+
+</video>
+<p>Freezing Vibration</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Beelzebub - 01.ogg" type="video/ogg">
+
+<source src="Beelzebub - 01.mp4 " type="video/mp4">
+
+</video>
+<p>Beelzebub</p>
+</td>
+</tr>
+<tr>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Ben 10 Omniverse Episode 1 - Watch anime online, Watch cartoon online, English dub anime.ogg" type="video/ogg">
+
+<source src="Ben 10 Omniverse Episode 1 - Watch anime online, Watch cartoon online, English dub anime.mp4 " type="video/mp4">
+
+</video>
+<p>Ben 10 Omniverse </p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Bleach Episode 366.ogg" type="video/ogg">
+
+<source src="Bleach Episode 366.mp4 " type="video/mp4">
+
+</video>
+<p>Bleach</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Aldnoah Zero Episode 12.ogg" type="video/ogg">
+
+<source src="Aldnoah Zero Episode 12.mp4 " type="video/mp4">
+
+</video>
+<p>Aldnoah Zero</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Blade Dance of the Elementalers Episode 1.compressed.ogg" type="video/ogg">
+
+<source src="Blade Dance of the Elementalers Episode 1.compressed.mp4 " type="video/mp4">
+
+</video>
+<p>Blade Dance of the Elementalers</p>
+</td>
+</tr>
+<tr>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Blade of the Immortal episode 1 english dubbed - YouTube.ogg" type="video/ogg">
+
+<source src="Blade of the Immortal episode 1 english dubbed - YouTube.mp4 " type="video/mp4">
+
+</video>
+<p>Blade of the Immortal </p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Blue Exorcist Episode 1.ogg" type="video/ogg">
+
+<source src="Blue Exorcist Episode 1.mp4 " type="video/mp4">
+
+</video>
+<p>Blue Exorcist</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Demon King Daimao- Episode 1 - Part 1 English Dub - YouTube.ogg" type="video/ogg">
+
+<source src="Demon King Daimao- Episode 1 - Part 1 English Dub - YouTube.mp4 " type="video/mp4">
+
+</video>
+<p>Demon King Daimao </p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Digimon Adventure 01 - Episode - 01 (English Dub) - YouTube.ogg" type="video/ogg">
+
+<source src="Digimon Adventure 01 - Episode - 01 (English Dub) - YouTube.mp4 " type="video/mp4">
+
+</video>
+<p>Digimon Adventure</p>
+</td>
+</tr>
+<tr>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Fairy tail ep 182 - Burning Ground-_2.ogg" type="video/ogg">
+
+<source src="Fairy tail ep 182 - Burning Ground-_2.mp4 " type="video/mp4">
+
+</video>
+<p>Fairy Tail</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Watch Fate_stay Night Episode 1 Online - English Dubbed-Subbed Episodes.ogg" type="video/ogg">
+
+<source src="Watch Fate_stay Night Episode 1 Online - English Dubbed-Subbed Episodes.mp4 " type="video/mp4">
+
+</video>
+<p>Watch Fate Stay Night </p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Full Metal Panic! The Second Raid Episode 01 (English Dubbed) - YouTube.ogg" type="video/ogg">
+
+<source src="Full Metal Panic! The Second Raid Episode 01 (English Dubbed) - YouTube.mp4 " type="video/mp4">
+
+</video>
+<p>Full Metal Panic</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Galactik Football - S02E01 - Return To Genesis - YouTube.ogg" type="video/ogg">
+
+<source src="Galactik Football - S02E01 - Return To Genesis - YouTube.mp4 " type="video/mp4">
+
+</video>
+<p>Galactik Football</p>
+</td>
+</tr>
+<tr>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Watch Gangsta. Episode 1 english sub at Anime TV.ogg" type="video/ogg">
+
+<source src="Watch Gangsta. Episode 1 english sub at Anime TV.mp4 " type="video/mp4">
+
+</video>
+<p>Watch Gangsta</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Naruto Shippuuden Episode 345 English Sub_Dub.ogg" type="video/ogg">
+
+<source src="Naruto Shippuuden Episode 345 English Sub_Dub.mp4 " type="video/mp4">
+
+</video>
+<p>Naruto Shippuuden</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="RWBY Theme- Mirror, Mirror Extended (RoosterTeeth) .ogg" type="video/ogg">
+
+<source src="RWBY Theme- Mirror, Mirror Extended (RoosterTeeth) .mp4 " type="video/mp4">
+
+</video>
+<p>RWBY</p>
+</td>
+<td>
+<video controls height="200px" width="200px" >
+  
+<source src="Pokemon XY&Z Episode 4 English Sub_Dub.ogg" type="video/ogg">
+
+<source src="Pokemon XY&Z Episode 4 English Sub_Dub.mp4 " type="video/mp4">
+
+</video>
+<p>Pokemon XY&Z</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="side">
+
+<p>Popular Ongoing Series</p>
+<hr>
+
+<ul>
+
+<li><a href="https://fmovies.pe/watch/blade-runner-2049.html">Blade Runner 2049</a></li>
+<li><a href="https://fmovies.pe/watch/coco.html">Coco</a></li>
+<li><a href="https://fmovies.pe/watch/justice-league.html">justice league</a></li>
+<li><a href="http://animetv.in/anime/tabi-machi-late-show.html">Tabi Machi Late Show</a></li>
+<li><a href="http://animetv.in/anime/tabi-machi-late-show.html">Tabi Machi Late Show</a></li>
+<li><a href="http://animetv.in/anime/macross-delta.html">Macross Delta</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Aria The Avvenire</a></li>
+<li><a href="http://animetv.in/anime/Kuroko-no-Basket.html">Kuroko no Basket</a></li>
+<li><a href="http://animetv.in/anime/Valkrie-Drive.html">Valkyrie Drive</a></li>
+<li><a href="http://animetv.in/anime/One-punch-Man.html">One Punch Man</a></li> 
+<li><a href="http://animetv.in/anime/Moblie-Suit-Gundam.html">Mobile Suit Gundam</a></li>
+<li><a href="http://animetv.in/anime/Yani-shobai.html">Yami Shibai 3</a></li>
+<li><a href="http://animetv.in/anime/Teekyuu-7.html">Teekyuu 7</a></li>
+<li><a href="http://animetv.in/anime/Sushi-Police.html">Sushi Police</li>
+<li><a href="http://animetv.in/anime/Shouwa-Genroku-Rakugo.html">Shouwa Genroku Rakugo</a></li> 
+<li><a href="http://animetv.in/anime/Shoujo-tachi-wa-Kouya.html">Shoujo-tachi wa Kouya </a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Sekkou Boys</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Schwarzesmarken</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Reikenzan</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Prince of Stride</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Phantasy Star Online 2 </a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Oshiete! Galko-chan</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Ooya-san wa Shishunki!</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Ojisan to Marshmallow</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Nurse Witch</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Norn9: Norn+Nonet</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Nijiiro Days</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Musaigen no Phantom</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Mahoutsukai Precure</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Mahou Shoujo Nante</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Luck & Logic</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Koyomimonogatari</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Koukaku no Pandora</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Kono Subarashii Sekai ni</a></li> 
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Ketsuekigata-kun! 4</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Haruchika</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Gate: Jieitai Kanochi </a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Durarara!!x2 Ketsu</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Divine Gate</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Dimension W</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Dagashi Kashi</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Bubuki Buranki</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Boku dake ga Inai Machi</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Ao no Kanata no Four </a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Ansatsu Kyoushitsu </a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Ajin</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Active Raid</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">RWBY Volume 3</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Aikatsu! 4</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Itoshi no Muco</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Lupin III (2015)</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Pokemon XY&Z</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Brave Beats</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">JK Meshi!</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Utawarerumono: Itsuwari </a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Shin Atashin'chi</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Osomatsu-san</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Monster Strike</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Kindaichi Shounen no </a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Mobile Suit Gundam</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Heavy Object</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Haikyuu!! Second Season</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Garo: Guren no Tsuki</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Cardfight!! Vanguard G</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Kamisama Minarai</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Chu Feng: B.E.E</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Dragon Ball Super</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Robot Girls Z Plus</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Gintama' (2015)</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">PriPara 2</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Future Card Buddyfight</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Digimon Adventure Tri</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Diamond no Ace</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Battle Spirits</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Mobile Suit Gundam</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Go! Princess Precure</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">World Trigger</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Wake Up, Girl Zoo!</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Yu-Gi-Oh! Arc-V</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Fairy Tail (2014)</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Youkai Watch</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Naruto Shippuden</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">One Piece</a></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Folktales from Japan</></li>
+<li><a href="http://animetv.in/anime/aria-the-avvenire.html">Detective Conan</a></li>
+
+</ul>
+</div>
+</div>
+
+
+<div id="footer">
+<div id="left-footer">
+<p>top anime</p>
+<ul id="left-footer2">
+<li>Naruto</li>
+<li>One Piece</li>
+<li>Bleach</li>
+<li>Fairy Tail</li>
+<li>Overlord</li>
+<li>Tokyo Goual</li>
+<li>One Punch</li>
+<li>Dimination w</li>
+<li>Dragon Ball z </li>
+<li>Avanger</li>
+</ul>
+</div>
+<div id="left-footer">
+<p>anime and cartoon links</p>
+<ul>
+<li><a href="http://animetv.in"> animetv</a></li>
+<li><a href="http://www.dubbedanimehd.tv">dubbedanimehd</a></li>
+<li><a href="http://www.animeshow.tv">animeshow</a></li>
+<li><a href="www.justdubs.tv">justdub</a></li>
+<li><a href="http://kisscartoon.me">http://kisscartoon</a></li>
+<li><a href="https://kissanime.to/">kissanime</a></li>
+<li><a href="https://www.i-mountried.com">i-mountried</a></li>
+<li><a href="https://http://www.dubzonline.cm/">dubzonline</a></li>
+</ul>
+</div>
+<div id="left-footer1">
+<marquee>It isn't the one who is most strongest that survives, <br>nor the most intillegent that survive,<br> but the one who is most adaptable to the change that survive</marquee>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
